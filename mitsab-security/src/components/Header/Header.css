@@ -1,0 +1,77 @@
+#header{
+    background: var(--glow-1);
+    position: static !important;
+    margin-bottom: 2rem;
+    border: dashed;
+
+}
+#header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, transparent 10%, var(--color-primary) 100%);
+}
+#header .container *{
+    text-align: left;
+}
+#header .container{
+    padding-top: 20rem;
+    
+}
+
+#header .container .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space between left and right content */
+    align-items: center; /* Vertically aligns the items */
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    background: rgba(225, 225, 225, 0.5);
+    border-radius: var(--radius-3);
+    
+}
+
+#header .container  .column:first-child {
+    border-radius: var(--radius-3);
+    background: rgba(225, 225, 225, 0.4);
+    margin-bottom: 120px;
+    border: dashed;
+    text-align: left; /* Ensures text alignment on the left */
+}
+
+#header .container  .column .description{
+    color: var(--color-text);
+}
+
+#header .container  .column:last-child {
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image vertically */
+   
+}
+#header .container .buttons_container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
+
+@media (max-width:900px){
+    #header .container *{
+        text-align: center;
+    }
+    #header .container .column{
+        flex-direction: column;
+    }
+    #header .container .buttons_container{
+        justify-content: center;
+    }
+}

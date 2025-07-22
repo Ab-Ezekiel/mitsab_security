@@ -1,0 +1,27 @@
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 1rem;
+   
+}
+.logo .icon_container img{
+    height: 5rem;
+    width: 5rem;
+    
+}
+.logo .icon_container,
+.logo .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.logo .title{
+    font-size: 1.5rem;
+    color: rgb(10, 6, 77);
+    font-weight: 600;
+    margin-left: 3rem;
+    background: rgba(225, 225, 225, 0.7);
+    border-radius: 10px;
+}
+
+
