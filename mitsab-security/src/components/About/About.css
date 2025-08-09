@@ -86,10 +86,15 @@
     #about .company_photo{
         display: none;
     }
-    #about .title,
-    #about .sub_title,
-    #about .description{
+     #about .title,
+    #about .sub_title{
         text-align: center;
+    }
+    #about .text_muted{
+        text-align: justify;
+        
+        font-weight: 400;
+        
     }
     #about .buttons_container{
         justify-content: center;

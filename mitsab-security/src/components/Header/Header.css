@@ -2,7 +2,7 @@
     background: var(--glow-1);
     position: static !important;
     margin-bottom: 2rem;
-    border: dashed;
+   
 
 }
 #header::before{
